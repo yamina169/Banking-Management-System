@@ -44,7 +44,7 @@ void init_mysql() {
         fprintf(stderr, "mysql_init() failed\n");
         exit(1);
     }
-    if (mysql_real_connect(conn, "127.0.0.1", "root", "root", "bank_system", 0, NULL, 0) == NULL) {
+    if (mysql_real_connect(conn, "ip adress", "username", "password", "db_name", 0, NULL, 0) == NULL) {
         fprintf(stderr, "mysql_real_connect() failed\n");
         mysql_close(conn);
         exit(1);
